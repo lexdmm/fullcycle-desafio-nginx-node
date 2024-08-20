@@ -9,11 +9,7 @@ Também criar um volume para para o ambiente de desenvolvimento.
 
 * A linguagem de programação para este desafio é Node/JavaScript.
 
-O retorno da aplicação para o nginx deve ser:
-
-1 - <h1>Full Cycle Rocks!</h1>
-
-2 - Lista de nomes cadastrada no banco de dados.
+O retorno da aplicação para o nginx deve ser: Full Cycle Rocks! E a lista de nomes cadastrada no banco de dados.
 
 
 ### Para rodar
