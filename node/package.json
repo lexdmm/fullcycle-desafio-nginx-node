@@ -1,0 +1,16 @@
+{
+  "name": "fullcycle-desafio-nginx-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lexdmm/fullcycle-desafio-nginx-node.git",
+  "author": "lexdmm",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.4",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1"
+  }
+}
