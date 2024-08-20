@@ -25,9 +25,9 @@ async function insertNewName(res) {
     host: 'db',
     user: 'root',
     password: 'root',
-    database: 'people',
+    database: 'dbpeople',
   });
-  const INSERT_QUERY = `INSERT INTO person(name) values('${name}')`;
+  const INSERT_QUERY = `INSERT INTO people(name) values('${name}')`;
 
   con.query(INSERT_QUERY, (error, _results, _fields) => {
     if (error) {
@@ -42,12 +42,12 @@ async function insertNewName(res) {
 }
 
 function getAllNames(res, con) {
-  const SELECT_QUERY = `SELECT id, name FROM person`;
+  const SELECT_QUERY = `SELECT id, name FROM people`;
 
   con.query(SELECT_QUERY, (error, results) => {
     if (error) {
-      console.log(`Error getting person: ${error}`);
-      res.status(500).send('Error getting person');
+      console.log(`Error getting people: ${error}`);
+      res.status(500).send('Error getting people');
       return;
     }
 
