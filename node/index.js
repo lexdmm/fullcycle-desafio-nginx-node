@@ -24,7 +24,7 @@ async function insertNewName(res) {
   const con = mysql.createConnection({
     host: 'db',
     user: 'root',
-    password: 'password',
+    password: 'root',
     database: 'people',
   });
   const INSERT_QUERY = `INSERT INTO person(name) values('${name}')`;
